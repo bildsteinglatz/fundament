@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUNDAMENT | Haselsteiner Foundation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        stone: {
+                            50: '#fcfcfc',
+                            100: '#f5f5f4',
+                            200: '#e7e5e4',
+                            900: '#1c1917',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom styles for architectural feel */
+        body {
+            background-color: #f8f8f6; /* Subtle textured paper feel */
+            color: #1a1a1a;
+        }
+        .text-balance {
+            text-wrap: balance;
+        }
+        .pillar-number {
+            -webkit-text-stroke: 1px rgba(0,0,0,0.2);
+            color: transparent;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-black selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 z-50 bg-[#f8f8f6]/90 backdrop-blur-md border-b border-gray-200 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="font-black text-xl tracking-tighter">FUNDAMENT</a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#mission" class="hover:text-gray-500 transition-colors">Mission</a>
+                <a href="#projekte" class="hover:text-gray-500 transition-colors">Die Säulen</a>
+                <a href="#werte" class="hover:text-gray-500 transition-colors">Struktur</a>
+            </div>
+            <button class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex flex-col justify-center px-6 pt-32 pb-16 max-w-7xl mx-auto">
+        <div class="max-w-5xl">
+            <!-- Typographic Logo Recreation -->
+            <div class="inline-block w-full mb-12">
+                <h1 class="text-6xl sm:text-7xl md:text-8xl lg:text-[10rem] font-black tracking-tighter leading-none pb-4 md:pb-6 border-b-[8px] md:border-b-[16px] border-[#1a1a1a] w-full">
+                    FUNDAMENT
+                </h1>
+                <p class="text-lg sm:text-xl md:text-3xl mt-4 md:mt-6 font-light tracking-wide text-balance">
+                    Haselsteiner Foundation supporting artists in care-conditioned contexts
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transition Banner -->
+    <section class="bg-[#1a1a1a] text-white py-16 md:py-24 px-6">
+        <div class="max-w-7xl mx-auto text-center md:text-left md:flex items-center justify-between">
+            <h2 class="text-3xl md:text-5xl font-bold tracking-tight mb-4 md:mb-0 max-w-3xl text-balance">
+                Wir bauen an der Zukunft.
+            </h2>
+            <p class="text-xl md:text-2xl font-light text-gray-300 max-w-xl">
+                Aus dem Projekt <span class="font-semibold text-white">andersART</span> wird die FUNDAMENT Stiftung.
+            </p>
+        </div>
+    </section>
+
+    <!-- Mission Bilingual Section -->
+    <section id="mission" class="py-24 px-6 max-w-7xl mx-auto border-b border-gray-300">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24">
+            <!-- DE -->
+            <div>
+                <h3 class="text-sm font-bold uppercase tracking-widest text-gray-500 mb-8 border-l-2 border-black pl-4">Mission (DE)</h3>
+                <p class="text-xl md:text-2xl leading-relaxed font-medium">
+                    „Unsere Mission ist es, die strukturellen Grundlagen für künstlerische Autonomie zu bauen. Wir schließen die Lücke zwischen Wohlfahrt und Kultur, indem wir Rahmenbedingungen schaffen, in denen Künstler:innen und professionelle Partner auf Augenhöhe zusammenarbeiten. Durch das Bereitstellen eines stabilen Fundaments – bestehend aus rechtlichen, finanziellen und räumlichen Unterstützungsarchitekturen – ermöglichen wir es Künstler:innen mit Assistenzbedarf, nachhaltig zu arbeiten, zu wachsen und einen gleichberechtigten Platz im zeitgenössischen Kunstbetrieb einzunehmen.“
+                </p>
+            </div>
+            <!-- EN -->
+            <div>
+                <h3 class="text-sm font-bold uppercase tracking-widest text-gray-500 mb-8 border-l-2 border-black pl-4">Mission (EN)</h3>
+                <p class="text-xl md:text-2xl leading-relaxed font-light text-gray-800">
+                    "Our mission is to build the structural foundations for artistic autonomy. We bridge the gap between welfare and culture by designing frameworks where artists and professional partners collaborate at eye level. By providing a stable fundament—consisting of legal, financial, and spatial support architectures—we enable artists in care-conditioned contexts to work sustainably, to grow, and to take their rightful place within the contemporary art world."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- The 4 Pillars Section -->
+    <section id="projekte" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="mb-20 text-center md:text-left">
+            <h2 class="text-4xl md:text-6xl font-black tracking-tight mb-6">Die 4 Säulen</h2>
+            <p class="text-xl text-gray-600 max-w-2xl text-balance">Die tragenden Elemente unserer Stiftungsarbeit zur Schaffung einer inklusiven und professionellen Kunstlandschaft.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 lg:gap-24">
+            
+            <!-- Pillar 01 -->
+            <div class="group relative">
+                <div class="text-7xl md:text-9xl font-black pillar-number absolute -top-10 -left-6 md:-left-10 opacity-50 z-0 select-none transition-transform group-hover:scale-110 duration-500">01</div>
+                <div class="relative z-10 border-t-4 border-black pt-6">
+                    <h3 class="text-2xl md:text-3xl font-bold mb-4 uppercase tracking-tight">Die Sammlung</h3>
+                    <p class="text-lg leading-relaxed text-gray-700">
+                        Der Fokus liegt auf dem gezielten Aufbau und der konsequenten Vervollständigung einer kunsthistorisch relevanten Sammlung zeitgenössischer Positionen. FUNDAMENT konzentriert sich dabei insbesondere auf Werke von Künstler:innen mit Assistenzbedarf, die ab dem Jahr 2000 entstanden sind. Durch zwei jährliche Ausschreibungen für Ankäufe werden fehlende Positionen identifiziert und erworben, um die Qualität und den besonderen Stellenwert dieser Kunstgattung innerhalb der zeitgenössischen Szene dauerhaft zu sichern und aufzuwerten.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Pillar 02 -->
+            <div class="group relative">
+                <div class="text-7xl md:text-9xl font-black pillar-number absolute -top-10 -left-6 md:-left-10 opacity-50 z-0 select-none transition-transform group-hover:scale-110 duration-500">02</div>
+                <div class="relative z-10 border-t-4 border-black pt-6">
+                    <h3 class="text-2xl md:text-3xl font-bold mb-4 uppercase tracking-tight">Vernetzung & Plattform</h3>
+                    <p class="text-lg leading-relaxed text-gray-700">
+                        Die Stiftung versteht sich als zentraler Netzwerkknotenpunkt, der eine bisher schmerzhafte Leerstelle in der Kunstwelt füllt. Durch die Schaffung einer Plattform für den Austausch zwischen Künstler:innen, Familien, Ateliers und Expert:innen wird Wissen zu Verträgen, Verkäufen und Kooperationen gebündelt. Ein jährliches Symposium, etwa im Gironcoli-Kristall, dient als Ort für moderierte Arbeitsgruppen und Workshops, um Synergien zwischen Akteur:innen mit und ohne Beeinträchtigung aktiv zu stiften und neue Strategien für die Szene zu entwickeln.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Pillar 03 -->
+            <div class="group relative">
+                <div class="text-7xl md:text-9xl font-black pillar-number absolute -top-10 -left-6 md:-left-10 opacity-50 z-0 select-none transition-transform group-hover:scale-110 duration-500">03</div>
+                <div class="relative z-10 border-t-4 border-black pt-6">
+                    <h3 class="text-2xl md:text-3xl font-bold mb-4 uppercase tracking-tight text-balance">Förderung von Atelierplätzen</h3>
+                    <p class="text-lg leading-relaxed text-gray-700">
+                        Ein wesentlicher Pfeiler der Stiftungsarbeit ist das Bauen und Unterstützen von Arbeitsstrukturen, die künstlerische Freiheit jenseits traditioneller Werkstätten ermöglichen. FUNDAMENT fördert gezielt Künstler:innen, die in freien Ateliergemeinschaften oder ohne feste Trägervereine arbeiten. Durch die Finanzierung von Plätzen in inklusiven Projekten wie der Halle 5 werden Pionierleistungen unterstützt, die den aktuellen Umbruch in der Szene weg von rein pädagogischen Räumen hin zu professionellen Produktionsstätten vorantreiben.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Pillar 04 -->
+            <div class="group relative">
+                <div class="text-7xl md:text-9xl font-black pillar-number absolute -top-10 -left-6 md:-left-10 opacity-50 z-0 select-none transition-transform group-hover:scale-110 duration-500">04</div>
+                <div class="relative z-10 border-t-4 border-black pt-6">
+                    <h3 class="text-2xl md:text-3xl font-bold mb-4 uppercase tracking-tight">Kuratorische Projekte</h3>
+                    <p class="text-lg leading-relaxed text-gray-700">
+                        Um eine gleichberechtigte kulturelle Teilhabe ohne ausgrenzende Label zu verwirklichen, unterstützt die Stiftung Projekte, die künstlerische Positionen auf höchstem kuratorischen Niveau sichtbar machen. Gefördert werden Ausstellungen und transdisziplinäre Vorhaben, die Künstler:innen mit und ohne Beeinträchtigung in einen gemeinsamen Dialog bringen. Dabei steht nicht die Wohltätigkeit im Vordergrund, sondern die Bereicherung der zeitgenössischen Kunstszene durch Vielfalt, Innovation und die hohe Qualität der präsentierten Arbeiten.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Core Values / Structural Design Section -->
+    <section id="werte" class="py-24 bg-white border-t border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="mb-16">
+                <h2 class="text-3xl md:text-5xl font-black tracking-tight mb-4">Strukturelles Design</h2>
+                <p class="text-xl text-gray-500">Die Prinzipien unserer Arbeit.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
+                <!-- Value 1 -->
+                <div class="flex flex-col h-full border-t-2 border-black pt-6">
+                    <h4 class="text-2xl font-bold mb-4 uppercase">Architektur</h4>
+                    <p class="text-lg font-medium mb-3 text-gray-900 flex-grow">Unterstützung als strukturelles Design, nicht als Wohltätigkeit.</p>
+                    <p class="text-sm text-gray-600 leading-relaxed border-l-2 border-gray-300 pl-3">Schaffung dauerhafter, professioneller Arbeitsbedingungen.</p>
+                </div>
+
+                <!-- Value 2 -->
+                <div class="flex flex-col h-full border-t-2 border-black pt-6">
+                    <h4 class="text-2xl font-bold mb-4 uppercase">Autonomie</h4>
+                    <p class="text-lg font-medium mb-3 text-gray-900 flex-grow">Fokus auf die <span class="italic">Artistic Agency</span> (Handlungsmacht) der Künstler:innen.</p>
+                    <p class="text-sm text-gray-600 leading-relaxed border-l-2 border-gray-300 pl-3">Ablösung von rein therapeutischen oder pflegerischen Ansätzen.</p>
+                </div>
+
+                <!-- Value 3 -->
+                <div class="flex flex-col h-full border-t-2 border-black pt-6">
+                    <h4 class="text-2xl font-bold mb-4 uppercase">Partnerschaft</h4>
+                    <p class="text-lg font-medium mb-3 text-gray-900 flex-grow">Vernetzung von „Care“ und „Kultur“ durch neue Kooperationsmodelle.</p>
+                    <p class="text-sm text-gray-600 leading-relaxed border-l-2 border-gray-300 pl-3">Aufbau eines inklusiven Ökosystems im Kunstmarkt.</p>
+                </div>
+
+                <!-- Value 4 -->
+                <div class="flex flex-col h-full border-t-2 border-black pt-6">
+                    <h4 class="text-2xl font-bold mb-4 uppercase">Präzision</h4>
+                    <p class="text-lg font-medium mb-3 text-gray-900 flex-grow">Klare, „smarte“ Kommunikation statt emotionalisierender Sprache.</p>
+                    <p class="text-sm text-gray-600 leading-relaxed border-l-2 border-gray-300 pl-3">Anerkennung der Kunst auf höchstem kuratorischem Niveau.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#1a1a1a] text-white py-16 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+            <div>
+                <h2 class="text-3xl font-black tracking-tighter mb-2">FUNDAMENT</h2>
+                <p class="text-sm text-gray-400 max-w-sm">Haselsteiner Foundation supporting artists in care-conditioned contexts</p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row gap-8 md:gap-16 text-sm font-light text-gray-400">
+                <div class="flex flex-col gap-2">
+                    <a href="#" class="hover:text-white transition-colors">Impressum</a>
+                    <a href="#" class="hover:text-white transition-colors">Datenschutz</a>
+                    <a href="#" class="hover:text-white transition-colors">Presse</a>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <a href="mailto:info@fundament-stiftung.at" class="hover:text-white transition-colors">info@fundament-stiftung.at</a>
+                    <p>Wien, Österreich</p>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-gray-800 text-xs text-gray-500 text-center md:text-left">
+            &copy; 2026 FUNDAMENT Haselsteiner Foundation. Alle Rechte vorbehalten.
+        </div>
+    </footer>
+
+</body>
+</html>
